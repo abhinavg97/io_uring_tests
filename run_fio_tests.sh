@@ -31,7 +31,7 @@ for depth in "${iodepths[@]}"; do
 
     # Modify spdk.fio
     sed -i "s/iodepth=.*/iodepth=$depth/" spdk.fio
-    sudo fio spdk.fio --output-format=json -o $RESULTS/output_spdk_${depth}_1core.txt
+    sudo LD_PRELOAD=/home/gabhinav001/spdk/build/fio/spdk_nvme fio spdk.fio --output-format=json -o $RESULTS/output_spdk_${depth}_1core.txt
 done
 
 echo "Tests completed."

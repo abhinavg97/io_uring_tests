@@ -8,9 +8,9 @@ allow_file_create=0
 rw=randread
 bs=4k
 norandommap=1
-ioengine=aio
+ioengine=libaio
 thread=1
-iodepth=2
+iodepth=4
 
 [job1]
 filename=/dev/nvme0n1

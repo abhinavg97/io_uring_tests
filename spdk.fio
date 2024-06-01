@@ -8,9 +8,9 @@ allow_file_create=0
 rw=randread
 bs=4k
 norandommap=1
-filename=trtype=PCIe traddr=0000.04.00.0 ns=1
-ioengine=SPDK
+filename=trtype=PCIe traddr=0000.00.04.0 ns=1
+ioengine=spdk
 thread=1
-iodepth=2
+iodepth=4
 
 [job1]
