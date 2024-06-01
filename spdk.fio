@@ -2,14 +2,15 @@
 direct=1
 size=100%
 time_based=1
-
+runtime=120
+ramp_time=20
 allow_file_create=0
 rw=randread
 bs=4k
 norandommap=1
-filename=trtype=PCIe traddr=0000.b1.00.0 ns=1
-ioengine=spdk
+filename=trtype=PCIe traddr=0000.04.00.0 ns=1
+ioengine=SPDK
 thread=1
-iodepth=1
+iodepth=2
 
 [job1]

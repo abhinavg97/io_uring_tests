@@ -2,14 +2,15 @@
 direct=1
 size=100%
 time_based=1
-
+runtime=120
+ramp_time=20
 allow_file_create=0
 rw=randread
 bs=4k
 norandommap=1
 ioengine=io_uring
 thread=1
-iodepth=128
+iodepth=4
 
 [job1]
-filename=/dev/nvme2n1
+filename=/dev/nvme0n1
