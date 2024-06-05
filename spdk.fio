@@ -11,6 +11,6 @@ norandommap=1
 filename=trtype=PCIe traddr=0000.00.04.0 ns=1
 ioengine=spdk
 thread=1
-iodepth=4
+iodepth=128
 
 [job1]

@@ -10,7 +10,7 @@ bs=4k
 norandommap=1
 ioengine=io_uring
 thread=1
-iodepth=4
+iodepth=128
 hipri
 
 [job1]
